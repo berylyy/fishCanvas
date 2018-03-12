@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	*{
+        		margin:0;
+        		padding:0;
+        	}
+        	body{
+        		text-align:center;
+        		background:#000;
+        	}
+        	#myCanvas{
+        		/* border: 1px solid blue; */
+        		margin: 80px 0;
+        	}
+            h1,h2{
+                color:#fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1></h1>
+        <h2></h2>
+        <audio src="images/upgrade.wav" id="upgrade" hidden></audio>
+        <audio src="images/bg.mp3" loop="loop" id="audioBg" hidden></audio>
+        <audio src="images/bump.mp3" id="audioBump" hidden></audio>
+        <audio src="images/eat.wav" id="audioEat" hidden></audio>
+        <audio src="images/failWater.wav" id="failWater" hidden></audio>
+        <audio src="images/changeFishType.wav" id="changeFishType" hidden></audio>
+        <audio src="images/over.wav" id="over" hidden></audio>
+        <audio src="images/tip.wav" id="tip" hidden></audio>
+    	<canvas width="800" height="450" id="myCanvas"></canvas>
+    	<script src="js/underscore-min.js"></script>
+    	<script src="js/SimpleJavaScriptInheritance.js"></script>
+    	<script src="js/Game.js"></script>
+    	<script src="js/Actor.js"></script>
+    	<script src="js/Scene.js"></script>
+    	<script src="js/Background.js"></script>
+    	<script src="js/Hunter.js"></script>
+        <script src="js/Fish.js"></script>
+        <script src="js/Tool.js"></script>
+    	<script src="js/Info.js"></script>
+    	<script>
+			var game = new Game();
+    	</script>
+    </body>
+</html>
